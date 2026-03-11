@@ -4,6 +4,18 @@ A collection of Jupyter notebooks implementing and benchmarking core optimizatio
 
 ---
 
+## Tech Stack
+
+![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
+![NumPy](https://img.shields.io/badge/NumPy-013243?logo=numpy)
+![SciPy](https://img.shields.io/badge/SciPy-8CAAE6?logo=scipy&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?logo=scikit-learn&logoColor=white)
+![Numba](https://img.shields.io/badge/Numba-00A3E0?logo=numba&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?logo=python&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-F37626?logo=jupyter&logoColor=white)
+
+---
+
 ## Skills Demonstrated
 
 | Area | Topics |
@@ -72,20 +84,6 @@ Builds a scikit-learn compatible estimator for multi-class classification with t
 - L2,1 norm induces row-sparsity across all classes simultaneously
 - All three regularizers yield convex problems — proved from first principles
 - Clean sklearn API: `fit / predict / score` with cross-validation ready
-
----
-
-## Tech Stack
-
-| | |
-|---|---|
-| **Language** | Python 3 |
-| **Numerical Computing** | NumPy, SciPy (`optimize`, `linalg`) |
-| **ML Framework** | scikit-learn (API compatibility, datasets) |
-| **Performance** | Numba (JIT compilation with `@njit`) |
-| **Visualization** | Matplotlib |
-| **Environment** | Jupyter Notebook |
-| **Data** | OpenML (Leukemia), scikit-learn built-in (digits), synthetic (Toeplitz covariance) |
 
 ---
 
