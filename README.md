@@ -43,7 +43,7 @@ Implements PGD and APGD (accelerated) for linear and logistic regression with L1
 
 ---
 
-### [stichastic_gradient_descent.ipynb](stichastic_gradient_descent.ipynb)
+### [stochastic_gradient_descent.ipynb](stochastic_gradient_descent.ipynb)
 **SGD, SAG, and SVRG — Variance Reduction Methods**
 
 Benchmarks 5 optimizers (GD, AGD, SGD, SAG, SVRG) on large-scale ridge regression (10 000 samples). Implements SAG's gradient memory table and SVRG's inner/outer loop from scratch with Numba JIT for performance. Analyzes convergence under varying correlation (ρ = 0.1 → 0.9) and regularization (λ = 0.0001 → 1).
@@ -90,12 +90,21 @@ Builds a scikit-learn compatible estimator for multi-class classification with t
 ## Setup
 
 ```bash
-pip install numpy scipy scikit-learn matplotlib numba
+pip install -r requirements.txt
 jupyter notebook
 ```
+
+`optim_utils.py` (benchmark harness used by the quasi-Newton notebook) and `utils.py`
+(decision-boundary plot used by the multinomial project) are re-implementations of the
+helpers provided with the course, so that every notebook runs on its own.
 
 ---
 
 ## Context
 
-These notebooks were produced as part of a graduate-level optimization for machine learning course. The focus is on understanding *why* algorithms converge, not just running them — every method includes derivation, implementation, and empirical validation.
+Lab sessions and project of the *Optimization for Data Science* course (statements by
+Alexandre Gramfort and co-authors: R. Gower, P. Ablin, M. Massias, H. Janati, J. Montoya),
+completed in pair with Nicolas Saint. The course provides the problem statements; the
+derivations, implementations and experiments are ours. The focus is on understanding *why*
+algorithms converge, not just running them: every method includes derivation,
+implementation and empirical validation.
